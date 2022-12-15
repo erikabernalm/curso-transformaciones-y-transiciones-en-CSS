@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container {
+			position: relative;
+			width: 100px;
+			height: 100px;
+			border: 5px solid hotpink;
+			/* perspective: none; */ /* valor por defecto */
+			/* perspective: 6.2rem; */
+			/* perspective: 2.7cm; */
+			perspective: 100px;
+			/* perspective-origin: center; */ /* valor por defecto */
+			/* perspective-origin: 50%; */
+			/* perspective-origin: 50% 50%; */ /* valor por defecto */
+			/* perspective-origin: left; */
+			/* perspective-origin: top; */
+			/* perspective-origin: -90%; */
+			/* perspective-origin: 50px; */
+			/* perspective-origin: -50px; */
+			/* perspective-origin: right top; */
+			/* perspective-origin: bottom right; */
+			/* perspective-origin: 20% bottom; */
+			perspective-origin: center top;
+			transform-style: preserve-3d;
+			/* transform-style: flat; */ /* valor por defecto */
+		}
+		.item {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background: papayawhip;
+			border: 3px solid hotpink;
+			opacity: 0.5;
+			transform: rotateX(60deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item"></div>
+	</div>
+</body>
+</html>
