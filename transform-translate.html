@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<style>
-		.shadow {
-			width: 100px;
-			height: 100px;
-			background: lightgray;
-			border-radius: 50%;
-		}
-		.circle {
-			width: 100px;
-			height: 100px;
-			background: #FF5F6D;
-			background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);
-			background: linear-gradient(to right, #FFC371, #FF5F6D); 
-			border-radius: 50%;
-		}
-		.circle:hover {
-		/* transform: translate(20px, 20px); */
-		transform: translate(30px);
-		/* transform: translateX(-20px); */
-		/*	transform: translateY(30px); */
-		}
-	</style>
-</head>
-<body>
-	<div class="shadow">
-		<div class="circle"></div>
-	</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .shadow {
+        width: 100px;
+        height: 100px;
+        background: lightgray;
+        border-radius: 50%;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        background: #ff5f6d;
+        background: -webkit-linear-gradient(to right, #ffc371, #ff5f6d);
+        background: linear-gradient(to right, #ffc371, #ff5f6d);
+        border-radius: 50%;
+        transform: translate(0px);
+        transition-property: transform;
+        /* transition-duration: 2s; */
+        transition-duration: 2000ms;
+      }
+      .circle:hover {
+        /* transform: translate(20px); */
+        transform: translate(30px, 30px);
+        /* transform: translateX(-20px); */
+        /*	transform: translateY(30px); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shadow">
+      <div class="circle"></div>
+    </div>
+  </body>
 </html>

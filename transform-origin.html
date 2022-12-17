@@ -10,7 +10,7 @@
 			background: lightsalmon;
 			width: 150px;
 			height: 100px;
-			/* transform-origin: left top; */
+		 	transform-origin: left top;
 			/* transform-origin: top left; */
 			/* transform-origin: right top; */
 			/* transform-origin: 20% 40%; */
@@ -25,11 +25,14 @@
 			/* transform-origin: 50px; */
 			/* transform-origin: right 80%; */
 			/* transform-origin: right 100px; */
-			transform-origin: 50% 50px;
+			/* transform-origin: 50% 50px; */
+			transform: rotate(0);
+			transition-property: transform;
+			transition-duration: 3.5s;
 		}
 		div:hover {
-			/* transform: rotate(30deg); */
-			transform: rotate(-30deg);
+			/* transform: rotate(-30deg); */
+			transform: rotate(360deg);
 		}
 	</style>
 </head>

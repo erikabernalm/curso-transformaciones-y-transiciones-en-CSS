@@ -10,7 +10,10 @@
 			width: 100px;
 			height: 100px;
 			background: lightpink;
-			border-radius: 20%;
+			border-radius: 15%;
+			transform: skew(0deg);
+			transition-property: border-radius, transform;
+			transition-duration: 1000ms, 5s;
 		}
 		div:hover {
 			/* transform: skew(20deg); */
@@ -20,6 +23,7 @@
 			/* transform: skew(10deg, 10deg); */
 			/* transform: skew(0.05turn); */
 			/* transform: skew(10rad); */
+			border-radius: 30%;
 			transform: skew(20deg, 10deg);
 		}
 	</style>
